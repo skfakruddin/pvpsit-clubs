@@ -1,0 +1,22 @@
+ .Fonts{
+    font-family: "Jua";
+ }
+ .Archive {
+        color: #000000;
+        font-family: "Jua";
+        font-size: 7vw;
+        text-shadow: 0.13020833333333334vw 0.13020833333333334vw 0.2604166666666667vw #ff7f0a;
+    }
+     .design {
+        color: #ffffff;
+        background-color: #000000;
+        font-family: "Jua";
+        font-size: 1.9vw;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .design:hover {
+        box-shadow: 0.46875vw 0.15625vw 0.3125vw #ff7f0a;
+    }
