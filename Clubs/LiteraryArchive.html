@@ -3,12 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Literary Archive || CSE</title>
-    <link rel="stylesheet" href="css/LiteraryArchive.css">
+    <title>Arts Archive || CSE</title>
+    <link rel="stylesheet" href="css/ArtsArchive2.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&display=swap">
+    <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
@@ -17,16 +18,18 @@
     <div class="banner">
         <a href="https://www.pvpsiddhartha.ac.in/"><img src="img/home/head.jpg" alt="Prasad V. Potluri Banner"></a>
     </div>
-
-    <a class="fa-solid fa-house" href="Home.html"></a>
-    <a class="fa-solid fa-arrow-left-long" href="literary.html"></a>
-    <a class="design" href="design.html" target="_blank">Designed By</a>
-    <div class="Archive">ARCHIVE</div>
-    <div class="archivecard"></div>
-    <div class="number"><span>2022-23</span></div>
-    <div class="reports">
-        <ul>
-            <li><a href="Archive/Literary Club/1. group discussion.pdf" target="_blank">Group Discussion</a></li>
+    <div class="flex justify-between items-center p-2 ">
+        <div class="flex flex-col md:gap-4">
+            <a class=" text-xl lg:text-3xl sm:px-4 md:px-3 lg:px-6 md:py-1 lg:py-3 fa-solid fa-house text-black md:text-white bg-white md:bg-black  border-none rounded-[1vw] cursor-pointer no-underline  text-center " href="Home.html"></a>
+            <a class=" hidden lg:inline-block md:text-3xl px-4 lg:px-6  lg:py-3 fa-solid fa-arrow-left-long text-black md:text-white bg-white md:bg-black   border-none rounded-[1vw] cursor-pointer no-underline  text-center" href="literary.html"></a>
+        </div>
+        <div class="text-3xl text-black Archive text-[10vw] mt-4  md:text-[7vw] [text-shadow:0.13vw_0.13vw_0.26vw_#ff7f0a]">ARCHIVE</div>
+        <a class="design text-white bg-black font-jua border-none rounded-[1vw] text-[2.2vw] md:text-[1.9vw] cursor-pointer no-underline w-[12vw] h-[4vw]   md:h-[2.6vw] text-center" href="design.html" target="_blank">Developed By</a>
+    </div>
+<div class="flex flex-col items-center md:flex-row md:items-stretch justify-around mt-5 md:mt-20 mb-10">    <div class="text-white font-oswald font-semibold text-[10vw] tracking-[0.065vw] leading-[19.8vw] whitespace-nowrap [-webkit-text-stroke:0.2vw_#fb6816]"><span>2022-23</span></div>
+   <div class="border-[0.2vw] border-black rounded-[3vh]  md:rounded-[5vh]  shadow-[0.7vw_0.7vw_1vw_#ff7f0a] h-[30vw] md:h-[25vw] w-[50vw] md:w-[40vw]">
+    <ul class="p-4 md:p-6 Fonts text-[2.2vw] md:text-[1.7vw] list-disc list-inside">
+        <li><a href="Archive/Literary Club/1. group discussion.pdf" target="_blank">Group Discussion</a></li>
             <li><a href="Archive/Literary Club/2. Book & movie review.pdf" target="_blank">Book & Movie Review</a></li>
             <li><a href="Archive//Literary Club/3. QUIZ.pdf" target="_blank">Quiz</a></li>
             <li><a href="Archive/Literary Club/4. DEBATE.pdf" target="_blank">Debate</a></li>
@@ -34,5 +37,7 @@
             <li><a href="Archive/Literary Club/6. Advertising strategy.pdf" target="_blank">Advertising Strategy</a></li>
             <li><a href="Archive/Literary Club/7. JAM report.pdf" target="_blank">Jam</a></li>
         </ul>
+    </ul>
+</div>
     </div>
 </body>

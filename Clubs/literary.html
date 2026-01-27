@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Literary Club || CSE</title>
-    <link rel="stylesheet" href="css/literary.css">
+    <link rel="stylesheet" href="css/Responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
 <body>
@@ -17,102 +20,91 @@
         <a href="https://www.pvpsiddhartha.ac.in/"><img src="img/home/head.jpg" alt="Prasad V. Potluri Banner"></a>
     </div>
 
-    <a class="fa-solid fa-house" href="Home.html"></a>
-<!--     <a class="fa-solid fa-arrow-left-long" href="Home.html"></a> -->
-    <a class="design" href="https://vigneshvaranasi.github.io/PVPSIT/Clubs/design" target="_blank">Designed By</a>
-    <a class="about" href="#about-section" onclick="smoothScroll('#abt')">About</a>
-
-    <!-- Menue for Mobile View Start -->
-    
-    <div class="menu-icon" onclick="toggleMenu()">
-        <i class="fa-solid fa-bars"></i>
-    </div>
-    <div class="side-menu">
-        <a onclick="toggleMenu()"> &#10005; Close Menu</a>
-        <a href="Home.html">Home</a>
-        <a class="archive" href="LiteraryArchive.html">Archive</a>
-        <a class="Gallery" href="LiteraryGallery.html">Gallery</a>
-    </div>
-    
-    <!-- Menue for Mobile View End -->
-
-    <a class="archive" href="LiteraryArchive.html">Archive</a>
-    <a class="Gallery" href="LiteraryGallery.html">Gallery</a>
-
-    <div class="label">Literary</div>
-
-    <div class="card">
-        <div class="slideshow">
-            <img class="slide" src="img/literary/Cards/Limg (5).JPG" alt="Slide 2">
-            <img class="slide" src="img/literary/Cards/Limg (2).JPG" alt="Slide 1">
-            <img class="slide" src="img/literary/Cards/Limg (6).JPG" alt="Slide 6">
-            <img class="slide" src="img/literary/Cards/Limg (1).JPG" alt="Slide 3">
-            <img class="slide" src="img/literary/Cards/Limg (4).JPG" alt="Slide 4">
-            <img class="slide" src="img/literary/Cards/Limg (3).JPG" alt="Slide 5">
+   <div class="flex justify-between items-center  xl:mt-3 ">
+        <div class="flex flex-col md:gap-4">
+            <a class=" lg:ml-2 sm:px-4 md:px-3 xl:px-6 md:py-1 lg:py-3 fa-solid fa-house text-black md:text-white bg-white md:bg-black  border-none rounded-[1vw] cursor-pointer no-underline hover:shadow-[0.46875vw_0.15625vw_0.3125vw_#ff7f0a] " href="Home.html"></a>
         </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="text-3xl text-black Archive text-[10vw] font-[jua] lg:mt-4  md:text-[7vw] [text-shadow:0.13vw_0.13vw_0.26vw_#ff7f0a]">Literary</div>
+        <a class=" text-white bg-black font-[jua] border-none rounded-[1vw] text-[2.2vw] md:text-[1.9vw] cursor-pointer w-[12vw] h-[4vw]  lg:mr-1  md:h-[2.6vw] text-center hover:shadow-[0.46875vw_0.15625vw_0.3125vw_#ff7f0a]" href="design.html " target="_blank">Developed By</a>
     </div>
 
-    <img src="img/literary/studentwithbook.svg" alt="rocket" class="rocket">
+    <div class="flex flex-col lg:flex-row justify-between mt-5 lg:mt-10">
 
-    <div class="dotted-events"></div>
-    <div class="dotted-reports"></div>
+        <img src="img/arts/Group.svg" alt="Student with a book" class="w-3/12 hidden lg:block">
+    <div class="mx-4 border-[0.2vw] border-black rounded-[3vh]  md:rounded-[5vh] shadow-[0.7vw_0.7vw_1vw_#ff7f0a] overflow-hidden ">
+        <div id="" class="relative  overflow-hidden w-full max-w-sm lg:max-w-lg xl:max-w-3xl ">
 
-    <div class="events">
-        <img class="documents" src="img/literary/todo.svg" alt="Man catching documents" loading="lazy">
-        <div class="eventline"></div>
-        <h1>Events</h1>
-        <ul>
-            <li><a href="Maintenance/Update.html">Group Discussion</a></li>
-            <li><a href="Maintenance/Update.html">Book & Movie Review</a></li>
-            <li><a href="Maintenance/Update.html">Quiz</a></li>
-            <li><a href="Maintenance/Update.html">Debate</a></li>
-            <li><a href="Maintenance/Update.html">Watching Sitcom</a></li>
-            <li><a href="Maintenance/Update.html">Advertising Strategy</a></li>
-            <li><a href="Maintenance/Update.html">Jam</a></li>
-        </ul>
-    </div>
-    <div class="reports">
-        <div class="reportline"></div>
-        <h1>Reports</h1>
-        <ul>
-            <li><a target="_blank" href="Archive/Literary Club/1. group discussion.pdf">Group Discussion</a></li>
-            <li><a target="_blank" href="Archive/Literary Club/2. Book & movie review.pdf">Book & Movie Review</a></li>
-            <li><a target="_blank" href="Archive/Literary Club/3. QUIZ.pdf">Quiz</a></li>
-            <li><a target="_blank" href="Archive/Literary Club/4. DEBATE.pdf">Debate</a></li>
-            <li><a target="_blank" href="Archive/Literary Club/5. WATCHING SITCOM.pdf">Watching Sitcom</a></li>
-            <li><a target="_blank" href="Archive/Literary Club/6. Advertising strategy.pdf">Advertising Strategy</a></li>
-            <li><a target="_blank" href="Archive/Literary Club/7. JAM report.pdf">Jam</a></li>
-        </ul>
+    <div class="slideshow flex transition-transform duration-500 ease-in-out rounded-2xl shadow-[5px_5px_12px_#ff7f0a]">
+        <img class="slide w-full flex-shrink-0 object-cover aspect-video"  src="./img/literary/Cards/Limg (1).JPG" alt="Slide 1">
+        <img class="slide w-full flex-shrink-0 object-cover aspect-video" src="./img/literary/Cards/Limg (2).JPG" alt="Slide 2">
+        <img class="slide w-full flex-shrink-0 object-cover aspect-video" src="./img/literary/Cards/Limg (3).JPG" alt="Slide 3">
+        <img class="slide w-full flex-shrink-0 object-cover aspect-video" src="./img/literary/Cards/Limg (4).JPG" alt="Slide 4">
+        <img class="slide w-full flex-shrink-0 object-cover aspect-video" src="./img/literary/Cards/Limg (5).JPG" alt="Slide 5">
+        <img class="slide w-full flex-shrink-0 object-cover aspect-video" src="./img/literary/Cards/Limg (6).JPG" alt="Slide 6">
     </div>
 
+    <button id="prev-btn" class="absolute top-1/2 left-4 -translate-y-1/2 rounded-full bg-black/50 p-2 text-white transition hover:bg-black/75">
+        &#10094;
+    </button>
+    <button id="next-btn" class="absolute top-1/2 right-4 -translate-y-1/2 rounded-full bg-black/50 p-2 text-white transition hover:bg-black/75">
+        &#10095;
+    </button>
+</div>
+    <script src="./home.js"></script>
 
-    <img class="cycle" src="img/literary/studying.svg" alt="Cycle" loading="lazy">
-    <div class="road"></div>
+    </div>
 
-    <div class="quote">
-        <p>“The true <span>freedom</span> of<span> reading</span> is the freedom to see any story from your <span>own
+        <div class="flex lg:flex-col justify-center items-center gap-6 mx-4 mt-3 lg:mt-0">
+            <a class="text-white bg-black font-[jua] text-center border-none rounded-[1vw] text-[2.2vw] md:text-[1.9vw] cursor-pointer w-[12vw] h-[3vw] hover:shadow-[0.46875vw_0.15625vw_0.3125vw_#ff7f0a]" href="#about-section" onclick="smoothScroll('#abt')">About</a>
+            <a class="text-white bg-black font-[jua] text-center border-none rounded-[1vw] text-[2.2vw] md:text-[1.9vw] cursor-pointer w-[12vw] h-[3vw] hover:shadow-[0.46875vw_0.15625vw_0.3125vw_#ff7f0a] " href="LiteraryArchive.html" >Archive</a>
+            <!-- <a class="text-white bg-black font-[jua] text-center border-none rounded-[1vw] text-[2.2vw] md:text-[1.9vw] cursor-pointer w-[12vw] h-[3vw] hover:shadow-[0.46875vw_0.15625vw_0.3125vw_#ff7f0a] " href="ArtsGallery.html" >Gallery</a> -->
+        </div>
+    </div>
+
+    
+    <div class="border-[0.2vw] border-dashed border-[#ff7f0a] flex justify-around mt-10  py-2 w-5/6 rounded-[5vh] mx-auto">
+
+        <img class="lg:w-2/5 hidden lg:block" src="img/arts/woman-with-a-laptop 1.svg" alt="Man catching documents" loading="lazy">
+
+        <div class="lg:w-3/5 flex flex-col justify-center items-center font-[jua]">
+            <div class="text-xl md:text-[2vw] underline underline-offset-4 lg:underline-offset-8 mb-2 lg:mb-4 ">
+                <h1 class=" ">Events</h1>
+            </div>
+            <ul class="list-disc  tex-md md:text-[1.5vw] ">
+               <li><a target="_blank" class="hover:text-[#ff7f0a]"  href="Archive/Literary Club/1. group discussion.pdf">Group Discussion</a></li>
+            <li><a target="_blank" class="hover:text-[#ff7f0a]"  href="Archive/Literary Club/2. Book & movie review.pdf">Book & Movie Review</a></li>
+            <li><a target="_blank" class="hover:text-[#ff7f0a]"  href="Archive/Literary Club/3. QUIZ.pdf">Quiz</a></li>
+            <li><a target="_blank" class="hover:text-[#ff7f0a]"  href="Archive/Literary Club/4. DEBATE.pdf">Debate</a></li>
+            <li><a target="_blank" class="hover:text-[#ff7f0a]"  href="Archive/Literary Club/5. WATCHING SITCOM.pdf">Watching Sitcom</a></li>
+            <li><a target="_blank" class="hover:text-[#ff7f0a]"  href="Archive/Literary Club/6. Advertising strategy.pdf">Advertising Strategy</a></li>
+            <li><a target="_blank" class="hover:text-[#ff7f0a]"  href="Archive/Literary Club/7. JAM report.pdf">Jam</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    
+    
+    <div class="flex justify-around items-center lg:mx-10">
+        <div class="quote text-[2.2vw] font-[jua] mt-4 w-4/5 text-[10px]  lg:text-xl xl:text-3xl">
+            <p>“The true <span>freedom</span> of<span> reading</span> is the freedom to see any story from your <span>own
                 perspective</span>.“</p>
+        </div>
+        <img class="w-1/5 hidden md:block" src="img/literary/studying.svg" alt="book" loading="lazy">
     </div>
-
-    <div>
-        <img class="book" src="img/literary/webdesign.svg" alt="book" loading="lazy">
+    <div class="border border-black mx-10 hidden md:block"></div>    
+     <div class="flex lg:justify-around  ">
+     <div class=" mx-2 md:mx-0 md:w-4/6 lg:w-2/5 text-[1.3vw] font-[Jua]  p-5 rounded-[5vh] h-auto border-[0.2vw] border-dashed border-[#ff7f0a] mb-5 mt-5 ">
+    <div class=" text-center" id="about-section">
+        <h1 class="underline underline-offset-8 font-bold text-lg md:text-2xl xl:text-4xl">About</h1>
     </div>
-
-    <div class="dot-abouts"></div>
-    <div class="abouts" id="about-section">
-        <h1>About</h1>
-    </div>
-
-    <div class="aboutsline"></div>
-    <div class="textbox">
-        <p>Discover the Literary Club of CSE Department
+    <div class="text-[3vw] lg:text-[1.5vw] ">
+        <p class="mt-5">Discover the Literary Club of CSE Department
             a vibrant community celebrating the art of words and self-expression. Whether you're an aspiring writer or a
             devoted reader, our club offers a platform to explore literature's diverse dimensions. </p>
         <p></p>
-        <p>Here's what we offer:
+        <p class="mt-5">Here's what we offer:
         </p>
+        <p></p>
         <ul>
             <li>Workshops </li>
             <li>Book Talks </li>
@@ -121,243 +113,247 @@
             <li>Competitions</li>
         </ul>
         <p></p>
-        <p>Join our Literary Club for an enriching journey of words, ideas, and connections. Whether you seek to refine
+        <p class="mt-5">Join our Literary Club for an enriching journey of words, ideas, and connections. Whether you seek to refine
             your writing, engage in insightful conversations, or simply revel in the literary realm, come be a part of
-            our expressive haven. Let's celebrate words together!</p>
+            our expressive haven. Let's celebrate words together!</p>        
     </div>
-    <article id="abt"></article>
+   </div>
+   <div class=" lg:w-3/6   hidden lg:block mt-5 ">
+    <img src="./img/literary/webdesign.svg" alt="">
+   </div>
+   </div>
+    <section class="py-12">
 
-    <section>
-        <h2 class="fc">Faculty Coordinators</h2>
-        <div class="container">
-            <div class="cordinator-card">
-                <div class="faculty1">
-                    <img class="fac1" src="img/literary/Coordinators/Manasa.jpg" alt="Faculty Coordinator 1"
-                        loading="lazy">
-                    <p class="facn1">Y.Manasa<br></p>
-                    <div class="fline1"></div>
-                    <a href="tel:+917013752626">
-                        <i class="fas fa-phone"></i>
-                    </a>
-                    <a href="mailto:manasayarrarapu@pvpsiddhartha.ac.in">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="Maintenance/Update.html">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="Maintenance/Update.html">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <div class="fline2"></div>
-                </div>
-                <div class="faculty2">
-                    <img class="fac2" src="img/literary/Coordinators/Bala Bhaskara.jpg" alt="Faculty Coordinator 2"
-                        loading="lazy">
-                    <p class="facn2">E.Bala Bhaskara Rao<br></p>
-                    <div class="fline1"></div>
-                    <a href="tel:+919542424931">
-                        <i class="fas fa-phone"></i>
-                    </a>
-                    <a href="mailto:balabhaskar605@pvpsiddhartha.ac.in">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="Maintenance/Update.html">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="Maintenance/Update.html">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <div class="fline2"></div>
-                </div>
+  <div class="flex flex-col lg:flex-row justify-center items-center lg:justify-around lg:items-start gap-10 w-full p-4">
 
-            </div>
-        </div>
-    </section>
-    <section>
-        <h2 class="sc">Student Coordinators</h2>
-        <div class="boxes1">
-            <div class="student-card">
-                <div class="student1">
-                    <img class="simg1" src="img/Innovation/cycle.svg" alt="Student Coordinator 1" loading="lazy">
-                    <p class="stun1">Name<br><span>President</span></p>
-                    <div class="line1"></div>
-                    <a href="tel:+1234567890">
-                        <i class="fas fa-phone"></i>
-                    </a>
-                    <a href="mailto:varanasivsv@gmail.com">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="Maintenance/Update.html">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="Maintenance/Update.html">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <div class="line2"></div>
-                </div>
+    <div class="flex flex-col items-center gap-6 lg:w-4/12 xl:mt-10">
+        <h2 class="font-[jua] text-center text-3xl">Faculty Coordinators</h2> 
+        <img src="./img/arts/shakinghands.jpg" alt="Two hands shaking" class="max-w-xs lg:max-w-md xl:max-w-lg rounded-lg hidden lg:block ">
+     </div> 
 
-                <div class="student2">
-                    <img class="simg2" src="img/literary/Coordinators/photo_5B4 - 20501A05B4 MOHAMMAD MUBEENA.jpg" alt="Student Coordinator 2"
-                        loading="lazy">
-                    <p class="stun2">Mohammad Mubeena<br><span>Vice President</span></p>
-                    <div class="line1"></div>
-                    <a href="tel:+916305968456">
-                        <i class="fas fa-phone"></i>
-                    </a>
-                    <a href="mailto:20501a05b4@pvpsit.ac.in">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="Maintenance/Update.html">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="Maintenance/Update.html">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <div class="line2"></div>
-                </div>
-                <div class="student3">
-                    <img class="simg3" src="img/Innovation/paperdocuments.svg" alt="Student Coordinator 3"
-                        loading="lazy">
-                    <p class="stun3">Name<br><span>Secretary</span></p>
-                    <div class="line1"></div>
-                    <a href="tel:+1234567890">
-                        <i class="fas fa-phone"></i>
-                    </a>
-                    <a href="mailto:varanasivsv@gmail.com">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="Maintenance/Update.html">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="Maintenance/Update.html">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <div class="line2"></div>
-                </div>
-                <div class="student4">
-                    <img class="simg4" src="img/Innovation/paperdocuments.svg" alt="Student Coordinator 4"
-                        loading="lazy">
-                    <p class="stun4">Name<br><span>Treasurer</span></p>
-                    <div class="line1"></div>
-                    <a href="tel:+1234567890">
-                        <i class="fas fa-phone"></i>
-                    </a>
-                    <a href="mailto:varanasivsv@gmail.com">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="Maintenance/Update.html">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="Maintenance/Update.html">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <div class="line2"></div>
+    <div class="flex flex-col gap-10 w-xl ">
+
+        <div class="w-full rounded-2xl border-2 border-black p-4 px-6 shadow-[6px_6px_12px_#ff7f0a] sm:p-6 flex items-center justify-between">
+            
+            <div class="flex flex-col items-start gap-4 lg:mr-5">
+                <p class="font-[Jua] text-2xl md:text-3xl ">Y.Manasa</p>
+                <div class="flex items-center gap-3 border-y-2 border-black px-3 py-1 text-xl">
+                    <a href="tel:+917013752626" class="transition hover:text-orange-500"><i class="fas fa-phone"></i></a>
+                    <a href="mailto:manasayarrarapu@pvpsiddhartha.ac.in" class="transition hover:text-orange-500"><i class="fas fa-envelope"></i></a>
+                    <a href="#" class="transition hover:text-orange-500"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="transition hover:text-orange-500"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section>
-        <div class="boxes2">
-            <div class="student-card2">
-                <div class="student5">
-                    <img class="simg5" src="img/Innovation/paperdocuments.svg" alt="Student Coordinator 5"
-                        loading="lazy">
-                    <p class="stun5">Name<br><span>Member</span></p>
-                    <div class="line1"></div>
-                    <a href="tel:+1234567890">
-                        <i class="fas fa-phone"></i>
-                    </a>
-                    <a href="mailto:varanasivsv@gmail.com">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="Maintenance/Update.html">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="Maintenance/Update.html">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <div class="line2"></div>
-                </div>
-                <div class="student6">
-                    <img class="simg6" src="img/Innovation/paperdocuments.svg" alt="Student Coordinator 6"
-                        loading="lazy">
-                    <p class="stun6">Name<br><span>Member</span></p>
-                    <div class="line1"></div>
-                    <a href="tel:+1234567890">
-                        <i class="fas fa-phone"></i>
-                    </a>
-                    <a href="mailto:varanasivsv@gmail.com">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="Maintenance/Update.html">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="Maintenance/Update.html">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <div class="line2"></div>
-                </div>
-                <div class="student7">
-                    <img class="simg7" src="img/Innovation/paperdocuments.svg" alt="Student Coordinator 7"
-                        loading="lazy">
-                    <p class="stun7">Name<br><span>Member</span></p>
-                    <div class="line1"></div>
-                    <a href="tel:+1234567890">
-                        <i class="fas fa-phone"></i>
-                    </a>
-                    <a href="mailto:varanasivsv@gmail.com">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="Maintenance/Update.html">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="Maintenance/Update.html">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <div class="line2"></div>
-                </div>
-                <div class="student8">
-                    <img class="simg8" src="img/Innovation/paperdocuments.svg" alt="Student Coordinator 8"
-                        loading="lazy">
-                    <p class="stun8">Name<br><span>Member</span></p>
-                    <div class="line1"></div>
-                    <a href="tel:+1234567890">
-                        <i class="fas fa-phone"></i>
-                    </a>
-                    <a href="mailto:varanasivsv@gmail.com">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="Maintenance/Update.html">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="Maintenance/Update.html">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <div class="line2"></div>
+            <img class="h-32 w-28 rounded-xl border-2 border-black object-cover lg:h-40 lg:w-32" src="img/literary/Coordinators/Manasa.jpg" alt="Photo of Y.Manasa" loading="lazy">
+
+        </div>
+
+        <div class="w-full rounded-2xl border-2 border-black p-4 px-6 shadow-[6px_6px_12px_#ff7f0a] sm:p-6 flex items-center justify-between">
+
+            <div class="flex flex-col items-start gap-4 lg:ml-5">
+                <p class="font-[Jua] text-2xl md:text-3xl ">E.Bala Bhaskara Rao</p>
+                <div class="flex items-center gap-3 border-y-2 border-black px-3 py-1 text-xl">
+                    <a href="tel:+919542424931" class="transition hover:text-orange-500"><i class="fas fa-phone"></i></a>
+                    <a href="mailto:balabhaskar605@pvpsiddhartha.ac.in" class="transition hover:text-orange-500"><i class="fas fa-envelope"></i></a>
+                    <a href="#" class="transition hover:text-orange-500"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="transition hover:text-orange-500"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
-        </div>
-    </section>
+            
+            <img class="h-32 w-28 rounded-xl border-2 border-black object-cover lg:h-40 lg:w-32" src="img/literary/Coordinators/Bala Bhaskara.jpg" alt="Photo of E.Bala Bhaskara Rao" loading="lazy">
 
-    <div class="shakinghands">
-        <img src="img/Innovation/shakinghands.svg" alt="shakinghands">
+        </div>
+
     </div>
-
-    <div class="sh">
-        <h2 class="sh-heading">Social Handles</h2>
-        <div class="social">
-            <a href="mailto:varanasivsv@gmail.com">
-                <i class="fas fa-envelope"></i>
+</div>
+</section>
+    <!-- <h2 class="schead">Student Coordinators</h2> -->
+    <!-- <div class="scontainer">
+        <div class="scard">
+            <img class="simg" src="/Clubs/img/Design/eswar.jpeg" alt="">
+            <p class="name">Eswar Aditya</p>
+            <p class="des">President</p>
+            <div class="line"></div>
+            <div class="icons">
+                <a href="tel:+919963293006">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <a href="mailto:yeswaraditya3006@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/yarlagaddaeswaraditya/">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/eswaraditya5">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="scard">
+            <img class="simg" src="img/Innovation/Coordinators/vignesh.JPEG" alt="">
+            <p class="name">Vignesh Varanasi</p>
+            <p class="des">Vice President</p>
+            <div class="line"></div>
+            <div class="icons">
+                <a href="tel:+919440632606">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <a href="mailto:mailto:varanasivsv@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/vigneshvaranasi">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/vignesh_varanasi">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="scard">
+            <img class="simg" src="img/Innovation/Coordinators/Sumanth.jpg" alt="">
+            <p class="name">V. Sumanth</p>
+            <p class="des">Secretary</p>
+            <div class="line"></div>
+            <div class="icons">
+                <a href="tel:+919704617051">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <a href="mailto:mailto:sumanthvallabhaneni1234@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sumanth-vallabhaneni">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/______.sumanth____/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="scard">
+            <img class="simg" src="img/Innovation/Coordinators/Sirisha.jpg" alt="">
+            <p class="name">V. Phani Sirisha</p>
+            <p class="des">Vice Secretary</p>
+            <div class="line"></div>
+            <div class="icons">
+                <a href="tel:+919494381636">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <a href="mailto:mailto:veerankiphanisirisha@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/veeranki-phani-sirisha-423179249">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/siiri.46">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="scard">
+            <img class="simg" src="img/Innovation/Coordinators/afzal.jpg" alt="">
+            <p class="name">Afzal</p>
+            <p class="des">Treasurer</p>
+            <div class="line"></div>
+            <div class="icons">
+                <a href="tel:+919390456707">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <a href="mailto:mailto:muhammadzfzalofc@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/syed-muhammad-afzal-305865287">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="Maintenance/Update.html">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="scard">
+            <img class="simg" src="img/Innovation/Coordinators/Fakruddin.jpeg" alt="">
+            <p class="name">Fakruddin</p>
+            <p class="des">Member</p>
+            <div class="line"></div>
+            <div class="icons">
+                <a href="tel:+917013357181">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <a href="mailto:mailto:shaikfakruddin2145@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/shaik-fakruddin-940296280/">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://instagram.com/shaikfakruddin55">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="scard">
+            <img class="simg" src="img/Innovation/Coordinators/Harshitha.jpg" alt="">
+            <p class="name">Harshitha Perumalla</p>
+            <p class="des">Member</p>
+            <div class="line"></div>
+            <div class="icons">
+                <a href="tel:+919573552122">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <a href="mailto:mailto:harshithaperumalla23@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/perumalla-harshitha-975798273">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://instagram.com/harshiii.122">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="scard">
+            <img class="simg" src="img/Innovation/Coordinators/pavan-squared.jpg" alt="">
+            <p class="name">Pavan Kumar</p>
+            <p class="des">Member</p>
+            <div class="line"></div>
+            <div class="icons">
+                <a href="tel:+919014914111">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <a href="mailto:mailto:pavankc005@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/pavankch">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://instagram.com/pavan.cos">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div class="line"></div>
+        </div>
+    </div> -->
+     <!-- <div class=" flex flex-col justify-center items-center font-[jua] text-xl font-bold">
+        <h2 class="">Social Handles</h2>
+        <div class="">
+            <a href="mailto:artscse@pvpsit.ac.in">
+                <i class="fas fa-envelope px-1"></i>
             </a>
             <a href="Maintenance/Update.html">
-                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-linkedin-in  px-1"></i>
             </a>
             <a href="Maintenance/Update.html">
-                <i class="fab fa-instagram"></i>
+                <i class="fab fa-instagram  px-1"></i>
             </a>
         </div>
-    </div>
+    </div> -->
+
     <script src="homes.js"></script>
 </body>
 

@@ -20,3 +20,24 @@
     .design:hover {
         box-shadow: 0.46875vw 0.15625vw 0.3125vw #ff7f0a;
     }
+.thin-scrollbar::-webkit-scrollbar {
+  width: 4px;   
+}
+
+.thin-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.thin-scrollbar::-webkit-scrollbar-thumb {
+  background: #fb6816; 
+  border-radius: 10px;
+}
+
+.thin-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #ff7f0a;
+}
+
+.thin-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #fb6816 transparent;
+}
